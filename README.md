@@ -1,4 +1,4 @@
-# Laravel 10 快速本機端登入
+# Laravel 11 快速本機端登入
 
 引入 spatie 的 laravel-login-link 套件來快速本機端登入，在處理許多不同應用程式的大型團隊中，追蹤正確的使用者憑證可能很麻煩，通過提供一個呈現登入連結的元件解決了這個問題，點擊後，該連結將使您登入。
 
@@ -20,9 +20,13 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate
 ```
-- 執行安裝 Laravel Mix 引用的依賴項目，並執行所有 Mix 任務。
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
 ```sh
-$ npm install && npm run dev
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/login` 來進行登入。
@@ -30,8 +34,8 @@ $ npm install && npm run dev
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/x4v0x9s.png)
+![](https://i.imgur.com/Z4KBr8z.png)
 > 確保連接僅在本地端呈現
 
-![](https://i.imgur.com/CSyBREi.png)
+![](https://i.imgur.com/Gy50doM.png)
 > 點擊連結後會自動登入
